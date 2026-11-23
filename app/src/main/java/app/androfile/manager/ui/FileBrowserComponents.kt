@@ -318,7 +318,7 @@ private fun FileRow(
                     if (!document.isDirectory && extension == "zip") {
                         DropdownMenuItem(text = { Text("Extract ZIP here") }, leadingIcon = { Icon(Icons.Rounded.Unarchive, null) },
                             onClick = { menuExpanded = false; onAction("extract") })
-                    } else if (!document.isDirectory) {
+                    } else {
                         DropdownMenuItem(text = { Text("Compress to ZIP") }, leadingIcon = { Icon(Icons.Rounded.Archive, null) },
                             onClick = { menuExpanded = false; onAction("compress") })
                     }
