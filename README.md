@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="docs/androfile-hero.svg" alt="AndroFile — Explore. Organise. Create." width="100%">
+<p align="center"><a href="docs/androfile-hero.svg"><img src="docs/androfile-hero.svg" alt="AndroFile — Android file workspace" width="100%"></a></p>
+
+<p align="center"><sub>Project identity artwork · The UI shown in this banner is illustrative, not an in-app screenshot.</sub></p>
 
 # ANDROFILE
 
@@ -103,7 +105,8 @@ The APK is written to app/build/outputs/apk/debug/app-debug.apk.
 
 ## Credits
 
-**Created by CFSTUDIO-project.**
+**Created by CFSTUDIO-project.**  
+Visual identity and application design: AndroFile contributors.
 
 AndroFile uses open-source Android and Shizuku components. See their respective project pages and licences before redistributing modified builds.
 

@@ -12,6 +12,7 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -188,11 +189,11 @@ fun AndroFileApp() {
             }
             "compress" -> {
                 val destination = currentDirectory ?: return
-                performOperation("ZIP archive created.") { store.createZip(document, destination) }
+                performOperation("ZIP archive created.", action = { store.createZip(document, destination) })
             }
             "extract" -> {
                 val destination = currentDirectory ?: return
-                performOperation("ZIP archive extracted.") { store.extractZip(document, destination) }
+                performOperation("ZIP archive extracted.", action = { store.extractZip(document, destination) })
             }
         }
     }
@@ -368,7 +369,7 @@ fun AndroFileApp() {
             confirmButton = {
                 androidx.compose.material3.TextButton(onClick = {
                     val target = renameTarget
-                    if (target != null) performOperation("Item renamed.") { store.rename(target, renameValue) }
+                    if (target != null) performOperation("Item renamed.", action = { store.rename(target, renameValue) })
                     renameTarget = null
                 }) { androidx.compose.material3.Text("Save", color = palette.accent) }
             },
@@ -398,9 +399,9 @@ fun AndroFileApp() {
             confirmButton = {
                 androidx.compose.material3.TextButton(onClick = {
                     val destination = currentDirectory
-                    if (destination != null) performOperation("Folder created.") {
+                    if (destination != null) performOperation("Folder created.", action = {
                         store.createFolder(destination, newFolderName)
-                    }
+                    })
                     showNewFolderDialog = false
                 }) { androidx.compose.material3.Text("Create", color = palette.accent) }
             },
@@ -422,7 +423,7 @@ fun AndroFileApp() {
             confirmButton = {
                 androidx.compose.material3.TextButton(onClick = {
                     val target = deleteTarget
-                    if (target != null) performOperation("Item deleted from storage.") { store.delete(target) }
+                    if (target != null) performOperation("Item deleted from storage.", action = { store.delete(target) })
                     deleteTarget = null
                 }) { androidx.compose.material3.Text("Delete", color = Color(0xFFE28A91)) }
             },

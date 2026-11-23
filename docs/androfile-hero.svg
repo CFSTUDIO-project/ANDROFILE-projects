@@ -1,29 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-<title id="title">AndroFile — Explore. Organise. Create.</title>
-<desc id="desc">An original Android-inspired robot and folder identity in emerald and blue on a dark navy banner.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
+<title id="title">AndroFile — Android file workspace</title>
+<desc id="desc">A unified Android-inspired character integrated with a blue folder, beside the AndroFile title and product capabilities.</desc>
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0C121B"/><stop offset=".55" stop-color="#172337"/><stop offset="1" stop-color="#101923"/></linearGradient>
- <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#79F0B7"/><stop offset="1" stop-color="#24B879"/></linearGradient>
- <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#65C8FF"/><stop offset="1" stop-color="#2875E8"/></linearGradient>
- <radialGradient id="glow"><stop stop-color="#3CCB9A" stop-opacity=".24"/><stop offset="1" stop-color="#3CCB9A" stop-opacity="0"/></radialGradient>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#09131b"/><stop offset=".52" stop-color="#142638"/><stop offset="1" stop-color="#0b1722"/></linearGradient>
+ <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a5f2c8"/><stop offset=".45" stop-color="#49d18e"/><stop offset="1" stop-color="#16885d"/></linearGradient>
+ <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8bd8ff"/><stop offset=".48" stop-color="#318fe9"/><stop offset="1" stop-color="#1552ad"/></linearGradient>
+ <linearGradient id="folder" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#58baff"/><stop offset="1" stop-color="#1760c4"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#3fd38e" stop-opacity=".28"/><stop offset="1" stop-color="#3fd38e" stop-opacity="0"/></radialGradient>
+ <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
 </defs>
-<rect width="1200" height="520" rx="34" fill="url(#bg)"/><circle cx="960" cy="120" r="300" fill="url(#glow)"/><circle cx="1040" cy="440" r="220" fill="#387DE8" opacity=".08"/>
-<g transform="translate(120 92)">
- <path d="M132 108c0-55 42-95 94-95s94 40 94 95v18H132z" fill="url(#green)"/>
- <path d="m165 20-28-39m255 39 28-39" fill="none" stroke="#79F0B7" stroke-width="13" stroke-linecap="round"/>
- <circle cx="189" cy="83" r="11" fill="#F3FFF8"/><circle cx="269" cy="83" r="11" fill="#F3FFF8"/>
- <path d="M137 134h188v87H137z" fill="url(#green)"/><rect x="90" y="139" width="34" height="100" rx="17" fill="#48C98E"/><rect x="338" y="139" width="34" height="100" rx="17" fill="#48C98E"/>
- <path d="M164 211h48v47c0 13-10 23-23 23s-25-10-25-23zm102 0h48v47c0 13-12 23-25 23s-23-10-23-23z" fill="#48C98E"/>
- <path d="M65 235h117l43 36h204c11 0 20 9 20 20v112c0 13-11 24-24 24H68c-13 0-24-11-24-24V260c0-14 9-25 21-25z" fill="url(#blue)"/>
- <path d="M45 290c0-13 11-24 24-24h356c13 0 24 11 24 24v113c0 13-11 24-24 24H69c-13 0-24-11-24-24z" fill="#3F9CEC"/>
- <path d="M180 325h56l17 18h73c8 0 14 6 14 14v35c0 8-6 14-14 14H171c-8 0-14-6-14-14v-49c0-10 9-18 23-18z" fill="#F5FBFF"/>
+<rect width="1440" height="620" rx="32" fill="url(#bg)"/>
+<circle cx="390" cy="300" r="300" fill="url(#glow)"/><circle cx="1190" cy="80" r="260" fill="#2d85cb" opacity=".08"/>
+<path d="M0 510 Q350 440 690 540 T1440 500" fill="none" stroke="#4b9d9a" stroke-opacity=".15" stroke-width="2"/>
+<ellipse cx="405" cy="520" rx="245" ry="34" fill="#000" opacity=".45" filter="url(#shadow)"/>
+<!-- Single continuous robot-and-folder mark: no detached antenna or ear pieces -->
+<g transform="translate(110 62)">
+ <path d="M150 212 C150 95 220 20 322 20 C424 20 494 95 494 212 L494 304 L150 304 Z" fill="url(#green)"/>
+ <path d="M178 197 C178 105 236 47 322 47 C408 47 466 105 466 197" fill="none" stroke="#d7ffe8" stroke-opacity=".34" stroke-width="8" stroke-linecap="round"/>
+ <ellipse cx="260" cy="168" rx="15" ry="18" fill="#f5fff9"/><ellipse cx="384" cy="168" rx="15" ry="18" fill="#f5fff9"/>
+ <path d="M176 270 Q176 246 200 246 H444 Q468 246 468 270 V371 H176Z" fill="url(#green)"/>
+ <path d="M208 356 H438 Q458 356 458 376 V402 H208Z" fill="#18865e" opacity=".65"/>
+ <path d="M96 304 H233 L273 340 H526 Q550 340 550 364 V444 Q550 470 524 470 H98 Q72 470 72 444 V330 Q72 304 96 304Z" fill="#0a3d78" opacity=".7"/>
+ <path d="M90 292 H226 L264 326 H526 Q550 326 550 350 V434 Q550 458 526 458 H94 Q70 458 70 434 V316 Q70 292 90 292Z" fill="url(#blue)"/>
+ <path d="M86 347 Q86 330 105 330 H523 Q540 330 540 349 V433 Q540 448 523 448 H94 Q78 448 78 432Z" fill="url(#folder)"/>
+ <path d="M222 363 H286 L310 386 H416 Q430 386 430 400 V416 Q430 430 416 430 H210 Q196 430 196 416 V389 Q196 363 222 363Z" fill="#eaf8ff" opacity=".95"/>
+ <path d="M112 306 Q112 297 124 297 H225 L255 326 H117 Q112 326 112 320Z" fill="#b9e9ff" opacity=".6"/>
 </g>
-<g font-family="Inter,Segoe UI,Arial,sans-serif" fill="#F3F7FC">
- <text x="590" y="220" font-size="73" font-weight="800" letter-spacing="2">ANDROFILE</text>
- <text x="596" y="276" font-size="22" font-weight="600" fill="#86E4BA" letter-spacing="5">ANDROID FILE WORKSPACE</text>
- <text x="596" y="340" font-size="24" fill="#B6C4D5">Explore. Organise. Create.</text>
- <text x="596" y="393" font-size="17" fill="#8091A7">FILE MANAGER · ZIP TOOLS · CODE EDITOR</text>
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+ <text x="760" y="205" fill="#f5f8fb" font-size="78" font-weight="800" letter-spacing="3">ANDROFILE</text>
+ <text x="765" y="258" fill="#7fe0b2" font-size="20" font-weight="700" letter-spacing="5">ANDROID FILE WORKSPACE</text>
+ <text x="765" y="322" fill="#d0dbe5" font-size="29">Explore. Organise. Create.</text>
+ <text x="765" y="370" fill="#91a5b8" font-size="19">A focused home for files, archives and code.</text>
+ <g transform="translate(765 430)">
+  <rect width="175" height="54" rx="15" fill="#193345" stroke="#36556a"/>
+  <text x="87" y="34" text-anchor="middle" fill="#bcebd4" font-size="16" font-weight="600">FILE MANAGER</text>
+  <rect x="190" width="145" height="54" rx="15" fill="#193345" stroke="#36556a"/>
+  <text x="262" y="34" text-anchor="middle" fill="#bcebd4" font-size="16" font-weight="600">ZIP TOOLS</text>
+  <rect x="350" width="145" height="54" rx="15" fill="#193345" stroke="#36556a"/>
+  <text x="422" y="34" text-anchor="middle" fill="#bcebd4" font-size="16" font-weight="600">CODE EDITOR</text>
+ </g>
+ <text x="765" y="542" fill="#8095a8" font-size="17">Version 1.0 Alpha  ·  Open source  ·  Built for Android</text>
 </g>
-<path d="M596 424h390" stroke="#456078" stroke-width="2" opacity=".65"/>
-<text x="596" y="463" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" fill="#8D9BAE">Version 1.0 Alpha</text>
 </svg>
